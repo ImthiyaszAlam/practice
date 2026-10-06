@@ -14,6 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.imthiyas.kotlin_practice.day5.extensions.addWelcome
 import com.imthiyas.kotlin_practice.day5.extensions.calculateLength
+import com.imthiyas.kotlin_practice.day5.scopefunctions.practiceApply
 import com.imthiyas.kotlin_practice.day5.scopefunctions.practiceLet
 import com.imthiyas.kotlin_practice.ui.theme.Kotlin_practiceTheme
 
@@ -33,8 +34,7 @@ class MainActivity : ComponentActivity() {
         Log.d("KotlinPractice", "Length: ${name.calculateLength()}")
 
         practiceLet()
-
-
+        practiceApply()
 
 
     }
