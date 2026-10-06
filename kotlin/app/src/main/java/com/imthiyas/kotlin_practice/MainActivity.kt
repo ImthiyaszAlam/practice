@@ -12,6 +12,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.imthiyas.kotlin_practice.day5.extensions.addWelcome
+import com.imthiyas.kotlin_practice.day5.extensions.calculateLength
+import com.imthiyas.kotlin_practice.day5.scopefunctions.practiceLet
 import com.imthiyas.kotlin_practice.ui.theme.Kotlin_practiceTheme
 
 class MainActivity : ComponentActivity() {
@@ -24,15 +27,14 @@ class MainActivity : ComponentActivity() {
             }
         }
 
-        val name: String = "Imthiyas Alam"
-        val result = name.addWelcome()
-        println(result)
+        val name = "Imthiyas"
 
-        Log.d("Result", result)
+        Log.d("KotlinPractice", name.addWelcome())
+        Log.d("KotlinPractice", "Length: ${name.calculateLength()}")
+
+        practiceLet()
 
 
-        val length = "Android".calculateLength()
-        Log.d("Length", "$length")
 
 
     }
@@ -41,12 +43,6 @@ class MainActivity : ComponentActivity() {
 }
 
 
-fun String.addWelcome(): String {
-    return "Welcome $this"
-}
 
-fun String.calculateLength(): Int {
-    return this.length
-}
 
 
