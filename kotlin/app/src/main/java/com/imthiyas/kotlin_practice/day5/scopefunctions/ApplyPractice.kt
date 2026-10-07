@@ -16,7 +16,7 @@ fun practiceApply() {
     }
     println(user)
     user?.let {
-        Log.d("User", "${user.name}")
+        Log.d("KotlinPractice", "User: ${user}")
     }
 
 
