@@ -33,11 +33,16 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.imthiyas.kotlin_practice.day5.extensions.addWelcome
 import com.imthiyas.kotlin_practice.day5.extensions.calculateLength
+import com.imthiyas.kotlin_practice.day5.practiceLateLazy
 import com.imthiyas.kotlin_practice.day5.scopefunctions.practiceAlso
 import com.imthiyas.kotlin_practice.day5.scopefunctions.practiceApply
 import com.imthiyas.kotlin_practice.day5.scopefunctions.practiceLet
 import com.imthiyas.kotlin_practice.day5.scopefunctions.practiceRun
 import com.imthiyas.kotlin_practice.day5.scopefunctions.practiceWith
+import com.imthiyas.kotlin_practice.day5.smartcast.practiceDestructuring
+import com.imthiyas.kotlin_practice.day6.practiceAsyncAwait
+import com.imthiyas.kotlin_practice.day6.practiceCoroutine
+import com.imthiyas.kotlin_practice.day6.practiceSuspend
 import com.imthiyas.kotlin_practice.ui.theme.Kotlin_practiceTheme
 
 class MainActivity : ComponentActivity() {
@@ -61,7 +66,12 @@ class MainActivity : ComponentActivity() {
         practiceAlso()
         practiceRun()
         practiceWith()
+        practiceDestructuring()
+        practiceLateLazy()
 
+        practiceSuspend()
+        practiceCoroutine()
+        practiceAsyncAwait()
 
     }
 
