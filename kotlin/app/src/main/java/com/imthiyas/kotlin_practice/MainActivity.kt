@@ -36,6 +36,8 @@ import com.imthiyas.kotlin_practice.day5.extensions.calculateLength
 import com.imthiyas.kotlin_practice.day5.scopefunctions.practiceAlso
 import com.imthiyas.kotlin_practice.day5.scopefunctions.practiceApply
 import com.imthiyas.kotlin_practice.day5.scopefunctions.practiceLet
+import com.imthiyas.kotlin_practice.day5.scopefunctions.practiceRun
+import com.imthiyas.kotlin_practice.day5.scopefunctions.practiceWith
 import com.imthiyas.kotlin_practice.ui.theme.Kotlin_practiceTheme
 
 class MainActivity : ComponentActivity() {
@@ -57,6 +59,8 @@ class MainActivity : ComponentActivity() {
         practiceLet()
         practiceApply()
         practiceAlso()
+        practiceRun()
+        practiceWith()
 
 
     }
