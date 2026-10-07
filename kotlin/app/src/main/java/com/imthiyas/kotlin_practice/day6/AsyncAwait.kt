@@ -122,4 +122,15 @@ fun practiceAsyncAwait() {
 
     Log.d("Coroutine", "result1 $result1")
 
+    CoroutineScope(Dispatchers.IO).launch {
+        try {
+            val result = getUserName()
+
+        } catch (e: Exception) {
+            Log.d("", "${e.message as? String}")
+        }
+    }
+
+
+
 }

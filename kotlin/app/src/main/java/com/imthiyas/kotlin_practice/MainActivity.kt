@@ -42,6 +42,7 @@ import com.imthiyas.kotlin_practice.day5.scopefunctions.practiceWith
 import com.imthiyas.kotlin_practice.day5.smartcast.practiceDestructuring
 import com.imthiyas.kotlin_practice.day6.practiceAsyncAwait
 import com.imthiyas.kotlin_practice.day6.practiceCoroutine
+import com.imthiyas.kotlin_practice.day6.practiceFlow
 import com.imthiyas.kotlin_practice.day6.practiceSuspend
 import com.imthiyas.kotlin_practice.ui.theme.Kotlin_practiceTheme
 
@@ -72,6 +73,7 @@ class MainActivity : ComponentActivity() {
         practiceSuspend()
         practiceCoroutine()
         practiceAsyncAwait()
+        practiceFlow()
 
     }
 
