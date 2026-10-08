@@ -30,4 +30,26 @@ fun practiceFunctions() {
 
     val result0 = multiply(3, 4)
     Log.d(TAG, "Hello $result0")
+
+
+    fun greet(name: String = "Imthiyas"): String {
+        return "Hello $name"
+    }
+
+    val greet = greet()
+    Log.d(TAG, "$greet")
+
+
+
+    fun addNumbs(vararg num: Int): Int {
+        var total = 0;
+        for (n in num) {
+            total += n
+        }
+        return total
+    }
+
+    val res = addNumbs(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    Log.d(TAG, "Numbers: $res")
+
 }
