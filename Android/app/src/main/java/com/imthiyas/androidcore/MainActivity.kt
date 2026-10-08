@@ -23,14 +23,16 @@ import com.imthiyas.androidcore.ui.theme.AndroidCoreTheme
 
 class MainActivity : ComponentActivity() {
 
+    val TAG = "StartLogForMain"
+    
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        Log.d("LIFECYCLEMAIN", "onCreate")
+        Log.d(TAG, "onCreate")
         enableEdgeToEdge()
         val count = savedInstanceState?.get("count") ?: 0
-        Log.d("LIFECYCLEMAIN", "$count")
+        Log.d(TAG, "$count")
 
 
         setContent {
@@ -61,27 +63,27 @@ class MainActivity : ComponentActivity() {
 
     override fun onStart() {
         super.onStart()
-        Log.d("LIFECYCLEMAIN", "onStart")
+        Log.d(TAG, "onStart")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.d("LIFECYCLEMAIN", "onResume")
+        Log.d(TAG, "onResume")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.d("LIFECYCLEMAIN", "onPause")
+        Log.d(TAG, "onPause")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.d("LIFECYCLEMAIN", "onStop")
+        Log.d(TAG, "onStop")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.d("LIFECYCLEMAIN", "onDestroy")
+        Log.d(TAG, "onDestroy")
     }
 }
 

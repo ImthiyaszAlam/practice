@@ -12,34 +12,35 @@ class SecondActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        Log.d("LIFECYCLEMAIN", "onStart")
+        Log.d(TAG, "onCreate")
     }
 
+    val TAG = "StartLogForSecond"
 
 
     override fun onStart() {
         super.onStart()
-        Log.d("LIFECYCLEMAIN", "onStart")
+        Log.d(TAG, "onStart")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.d("LIFECYCLEMAIN", "onResume")
+        Log.d(TAG, "onResume")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.d("LIFECYCLEMAIN", "onPause")
+        Log.d(TAG, "onPause")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.d("LIFECYCLEMAIN", "onStop")
+        Log.d(TAG, "onStop")
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.d("LIFECYCLEMAIN", "onDestroy")
+        Log.d(TAG, "onDestroy")
     }
 
 }
