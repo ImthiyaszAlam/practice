@@ -32,7 +32,9 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.imthiyas.kotlin_practice.day1.practiceIfElse
+import com.imthiyas.kotlin_practice.day1.practiceNullSafety
 import com.imthiyas.kotlin_practice.day1.practiceVariables
+import com.imthiyas.kotlin_practice.day1.practiceWhen
 import com.imthiyas.kotlin_practice.day5.extensions.addWelcome
 import com.imthiyas.kotlin_practice.day5.extensions.calculateLength
 import com.imthiyas.kotlin_practice.day5.practiceLateLazy
@@ -79,6 +81,8 @@ class MainActivity : ComponentActivity() {
 
         practiceVariables()
         practiceIfElse()
+        practiceWhen()
+        practiceNullSafety()
 
     }
 
