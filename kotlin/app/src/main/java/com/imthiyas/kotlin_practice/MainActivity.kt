@@ -35,6 +35,7 @@ import com.imthiyas.kotlin_practice.day1.practiceIfElse
 import com.imthiyas.kotlin_practice.day1.practiceNullSafety
 import com.imthiyas.kotlin_practice.day1.practiceVariables
 import com.imthiyas.kotlin_practice.day1.practiceWhen
+import com.imthiyas.kotlin_practice.day2.practiceFunctions
 import com.imthiyas.kotlin_practice.day5.extensions.addWelcome
 import com.imthiyas.kotlin_practice.day5.extensions.calculateLength
 import com.imthiyas.kotlin_practice.day5.practiceLateLazy
@@ -83,6 +84,11 @@ class MainActivity : ComponentActivity() {
         practiceIfElse()
         practiceWhen()
         practiceNullSafety()
+
+
+
+
+        practiceFunctions()
 
     }
 
