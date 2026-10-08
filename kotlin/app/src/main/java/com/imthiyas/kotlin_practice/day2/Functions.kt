@@ -52,4 +52,11 @@ fun practiceFunctions() {
     val res = addNumbs(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
     Log.d(TAG, "Numbers: $res")
 
+
+    fun addd(a: Int, b: Int): Int = a + b
+    fun subtract(a: Int, b: Int): Int = a - b
+    fun isAdult(age: Int) = age >= 18
+    fun isEligible(age: Int) = age >= 10
+    fun welcome(msg: String) = "Welcome $msg"
+
 }
