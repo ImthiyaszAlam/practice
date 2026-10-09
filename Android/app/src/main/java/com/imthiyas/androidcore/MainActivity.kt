@@ -24,7 +24,7 @@ import com.imthiyas.androidcore.ui.theme.AndroidCoreTheme
 class MainActivity : ComponentActivity() {
 
     val TAG = "StartLogForMain"
-    
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,11 +36,16 @@ class MainActivity : ComponentActivity() {
 
 
         setContent {
+
+
+            BackgroundWorkScreen()
+
             Column(
                 modifier = Modifier.fillMaxSize(),
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally
-            ) {
+            )
+            {
 
                 val context = LocalContext.current
                 Text(text = "$count")
