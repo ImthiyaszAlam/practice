@@ -12,3 +12,8 @@ Android/.idea/inspectionProfiles/Project_Default.xml
 Android/.idea/gradle.xml
 Android/.idea/deploymentTargetSelector.xml
 Android/.idea/AndroidProjectSystem.xml
+.idea/vcs.xml
+.idea/practice.iml
+.idea/modules.xml
+.idea/misc.xml
+.idea/caches/deviceStreaming.xml
