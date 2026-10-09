@@ -40,6 +40,7 @@ import com.imthiyas.kotlin_practice.day2.practiceHOF
 import com.imthiyas.kotlin_practice.day2.practiceLambdas
 import com.imthiyas.kotlin_practice.day3.practiceCollections
 import com.imthiyas.kotlin_practice.day3.practiceFilter
+import com.imthiyas.kotlin_practice.day3.practiceFindFirst
 import com.imthiyas.kotlin_practice.day3.practiceForEach
 import com.imthiyas.kotlin_practice.day3.practiceMap
 import com.imthiyas.kotlin_practice.day3.practiceMapTC
@@ -103,6 +104,7 @@ class MainActivity : ComponentActivity() {
         practiceForEach()
         practiceMapTC()
         practiceFilter()
+        practiceFindFirst()
 
     }
 
