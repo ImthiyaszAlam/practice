@@ -1,4 +1,4 @@
-package com.imthiyas.androidcore
+package com.imthiyas.androidcore.service
 
 import android.app.Service
 import android.content.Intent

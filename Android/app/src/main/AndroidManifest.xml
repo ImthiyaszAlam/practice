@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,9 +19,21 @@
         android:theme="@style/Theme.AndroidCore">
 
         <service
-            android:name=".DemoService"
+            android:name=".service.DemoService"
             android:exported="false" />
 
+        <service
+            android:name=".service.UploadService"
+            android:exported="false" />
+
+        <service
+            android:name=".service.TimerService"
+            android:exported="false" />
+
+        <service
+            android:name=".service.ForegroundTimerService"
+            android:exported="false"
+            android:foregroundServiceType="shortService" />
 
         <activity
             android:name=".MainActivity"

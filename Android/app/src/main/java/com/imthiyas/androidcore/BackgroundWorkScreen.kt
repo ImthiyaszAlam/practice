@@ -9,6 +9,8 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import com.imthiyas.androidcore.service.DemoService
+import com.imthiyas.androidcore.service.UploadService
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -48,6 +50,17 @@ fun BackgroundWorkScreen() {
             }
         ) {
             Text(text = "Start Service")
+        }
+
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+
+        Button(onClick = {
+            val intent = Intent(context, UploadService::class.java)
+            context.startService(intent)
+        }) {
+            Text(text = "Upload Service")
         }
     }
 
