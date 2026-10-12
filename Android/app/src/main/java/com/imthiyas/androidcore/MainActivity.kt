@@ -3,6 +3,7 @@ package com.imthiyas.androidcore
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.PixelCopy
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -19,11 +20,16 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.work.OneTimeWorkRequest
+import androidx.work.OneTimeWorkRequestBuilder
 import com.imthiyas.androidcore.ui.theme.AndroidCoreTheme
+import com.imthiyas.androidcore.workmanager.UploadWorker
+import com.imthiyas.androidcore.workmanager.WorkManagerScreen
 
 class MainActivity : ComponentActivity() {
 
     val TAG = "StartLogForMain"
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,7 +44,8 @@ class MainActivity : ComponentActivity() {
         setContent {
 
 
-            BackgroundWorkScreen()
+            // BackgroundWorkScreen()
+            WorkManagerScreen()
 
             Column(
                 modifier = Modifier.fillMaxSize(),
