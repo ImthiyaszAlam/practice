@@ -46,6 +46,9 @@ import com.imthiyas.kotlin_practice.day3.practiceMap
 import com.imthiyas.kotlin_practice.day3.practiceMapTC
 import com.imthiyas.kotlin_practice.day3.practiceSet
 import com.imthiyas.kotlin_practice.day3.practiceSorted
+import com.imthiyas.kotlin_practice.day4.Classses
+import com.imthiyas.kotlin_practice.day4.Constructor
+import com.imthiyas.kotlin_practice.day4.inheritance.DeliveryRider
 import com.imthiyas.kotlin_practice.day5.extensions.addWelcome
 import com.imthiyas.kotlin_practice.day5.extensions.calculateLength
 import com.imthiyas.kotlin_practice.day5.practiceLateLazy
@@ -107,6 +110,20 @@ class MainActivity : ComponentActivity() {
         practiceFilter()
         practiceFindFirst()
         practiceSorted()
+
+        val rider = Classses()
+        rider.name = "Alam"
+        rider.deliveries = 10
+        rider.amount = 400
+
+        rider.showDetails()
+
+        val rider1 = Constructor("Imthiyas", 8, 8000.0)
+        rider1.showDetails()
+
+        val riderIn = DeliveryRider("Imthiyas", 89, 88989.98, "Bike")
+        riderIn.showDetails()
+
 
     }
 
