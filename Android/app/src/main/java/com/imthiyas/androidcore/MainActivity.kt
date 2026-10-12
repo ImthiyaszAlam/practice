@@ -20,51 +20,31 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.core.content.ContextCompat.startActivity
 import androidx.work.OneTimeWorkRequest
 import androidx.work.OneTimeWorkRequestBuilder
+import com.imthiyas.androidcore.intents.ImplicitScreen
 import com.imthiyas.androidcore.ui.theme.AndroidCoreTheme
 import com.imthiyas.androidcore.workmanager.UploadWorker
 import com.imthiyas.androidcore.workmanager.WorkManagerScreen
 
 class MainActivity : ComponentActivity() {
 
+
     val TAG = "StartLogForMain"
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        Log.d(TAG, "onCreate")
-        enableEdgeToEdge()
-        val count = savedInstanceState?.get("count") ?: 0
-        Log.d(TAG, "$count")
-
-
         setContent {
 
-
             // BackgroundWorkScreen()
-            WorkManagerScreen()
-
-            Column(
-                modifier = Modifier.fillMaxSize(),
-                verticalArrangement = Arrangement.Center,
-                horizontalAlignment = Alignment.CenterHorizontally
-            )
-            {
-
-                val context = LocalContext.current
-                Text(text = "$count")
-                Button(onClick = {
-                    val intent = Intent(context, SecondActivity::class.java)
-                    startActivity(intent)
-                }) {
-                    Text(text = "Second")
-                }
-            }
+            // WorkManagerScreen()
+            ImplicitScreen()
 
         }
+
+
     }
 
 
@@ -105,6 +85,30 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         text = "Hello $name!",
         modifier = modifier
     )
+}
+
+
+@Composable
+fun Home() {
+    val TAG = "StartLogForMain"
+    Log.d(TAG, "onCreate")
+
+    Column(
+        modifier = Modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    )
+    {
+
+        val context = LocalContext.current
+
+        Button(onClick = {
+            val intent = Intent(context, SecondActivity::class.java)
+
+        }) {
+            Text(text = "Second")
+        }
+    }
 }
 
 @Preview(showBackground = true)
