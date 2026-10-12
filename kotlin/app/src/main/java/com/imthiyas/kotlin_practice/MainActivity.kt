@@ -45,6 +45,7 @@ import com.imthiyas.kotlin_practice.day3.practiceForEach
 import com.imthiyas.kotlin_practice.day3.practiceMap
 import com.imthiyas.kotlin_practice.day3.practiceMapTC
 import com.imthiyas.kotlin_practice.day3.practiceSet
+import com.imthiyas.kotlin_practice.day3.practiceSorted
 import com.imthiyas.kotlin_practice.day5.extensions.addWelcome
 import com.imthiyas.kotlin_practice.day5.extensions.calculateLength
 import com.imthiyas.kotlin_practice.day5.practiceLateLazy
@@ -105,6 +106,7 @@ class MainActivity : ComponentActivity() {
         practiceMapTC()
         practiceFilter()
         practiceFindFirst()
+        practiceSorted()
 
     }
 
