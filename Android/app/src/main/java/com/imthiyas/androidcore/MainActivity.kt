@@ -24,6 +24,7 @@ import androidx.core.content.ContextCompat.startActivity
 import androidx.work.OneTimeWorkRequest
 import androidx.work.OneTimeWorkRequestBuilder
 import com.imthiyas.androidcore.intents.ImplicitScreen
+import com.imthiyas.androidcore.thread.ThreadPracticeScreen
 import com.imthiyas.androidcore.ui.theme.AndroidCoreTheme
 import com.imthiyas.androidcore.workmanager.UploadWorker
 import com.imthiyas.androidcore.workmanager.WorkManagerScreen
@@ -40,7 +41,8 @@ class MainActivity : ComponentActivity() {
 
             // BackgroundWorkScreen()
             // WorkManagerScreen()
-            ImplicitScreen()
+            // ImplicitScreen()
+            ThreadPracticeScreen()
 
         }
 
